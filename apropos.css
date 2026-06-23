@@ -1,0 +1,350 @@
+/* =========================
+   HERO
+========================= */
+
+.page-hero {
+    position: relative;
+
+    height: 380px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    background-image: url("./src/assets/images/tissu.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.page-hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(159, 150, 133, 0.65);
+}
+
+.page-hero-content {
+    position: relative;
+    z-index: 2;
+
+    text-align: center;
+    color: white;
+}
+
+.breadcrumb {
+    display: block;
+
+    margin-bottom: 1rem;
+
+    font-size: 0.8rem;
+    letter-spacing: 0.15em;
+
+    opacity: 0.9;
+}
+
+.page-hero h1 {
+    font-family: var(--font-title);
+
+    font-size: 4.5rem;
+    font-weight: 400;
+
+    margin-bottom: 1rem;
+}
+
+.page-hero p {
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    line-height: 1.8;
+}
+
+/* =========================
+   PRESENTATION
+========================= */
+
+.about-page {
+    padding: 8rem 0;
+}
+
+.about-layout {
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+
+    border-radius: 12px;
+
+    object-fit: cover;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,.05);
+}
+
+.about-content {
+    flex: 1;
+}
+
+.about-content h2 {
+    font-family: var(--font-title);
+
+    font-size: 3.5rem;
+    font-weight: 400;
+
+    margin-bottom: 2rem;
+}
+
+.about-line {
+    width: 60px;
+    height: 1px;
+
+    background: #c9b091;
+
+    margin-bottom: 2rem;
+}
+
+.about-content p {
+    color: #7f756d;
+
+    line-height: 2;
+
+    margin-bottom: 1.5rem;
+}
+
+/* =========================
+   VALEURS
+========================= */
+
+.values {
+    padding: 8rem 0;
+
+    background: #ece8e2;
+}
+
+.values-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 2rem;
+}
+
+.value-card {
+    background: white;
+
+    padding: 3rem;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,.03);
+
+    transition: .3s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 10px 25px rgba(0,0,0,.05);
+}
+
+.value-card h3 {
+    font-family: var(--font-title);
+
+    font-size: 2rem;
+    font-weight: 400;
+
+    margin-bottom: 1rem;
+}
+
+.value-card p {
+    color: #7f756d;
+
+    line-height: 1.8;
+}
+
+/* =========================
+   SALON
+========================= */
+
+.salon {
+    padding: 8rem 0;
+}
+
+.salon-layout {
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+}
+
+.salon-content {
+    flex: 1;
+}
+
+.salon-content h2 {
+    font-family: var(--font-title);
+
+    font-size: 3.5rem;
+    font-weight: 400;
+
+    margin-bottom: 2rem;
+}
+
+.salon-content p {
+    color: #7f756d;
+
+    line-height: 2;
+
+    margin-bottom: 1.5rem;
+}
+
+.salon-image {
+    flex: 1;
+}
+
+.salon-image img {
+    width: 100%;
+
+    border-radius: 12px;
+
+    object-fit: cover;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,.05);
+}
+
+/* =========================
+   CTA
+========================= */
+
+.decouvrir {
+    position: relative;
+
+    height: 400px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+    background-image: url("./src/assets/images/tissu.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.decouvrir-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(159, 150, 133, 0.65);
+}
+
+.decouvrir-content {
+    position: relative;
+    z-index: 2;
+
+    text-align: center;
+}
+
+.decouvrir h2 {
+    margin-bottom: 2rem;
+
+    color: white;
+
+    font-family: var(--font-title);
+
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+.decouvrir-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1rem 2.5rem;
+
+    background: white;
+
+    border-radius: 999px;
+
+    color: #5a4536;
+
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+
+    transition: .3s ease;
+}
+
+.decouvrir-btn:hover {
+    transform: translateY(-2px);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1024px) {
+
+    .about-layout,
+    .salon-layout {
+        flex-direction: column;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .page-hero h1 {
+        font-size: 3.5rem;
+    }
+
+    .about-content h2,
+    .salon-content h2 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .page-hero {
+        height: 300px;
+    }
+
+    .page-hero h1 {
+        font-size: 2.8rem;
+    }
+
+    .about-page,
+    .values,
+    .salon {
+        padding: 5rem 0;
+    }
+
+    .salon-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .decouvrir {
+        height: 320px;
+    }
+
+    .decouvrir h2 {
+        font-size: 2.4rem;
+    }
+
+    .about-content h2 {
+    font-size: 2.2rem;
+    line-height: 1.1;
+}
+}

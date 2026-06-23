@@ -1,0 +1,365 @@
+/* =========================
+   HERO
+========================= */
+
+.page-hero {
+    position: relative;
+
+    height: 380px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    background-image: url("./src/assets/images/tissu.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.page-hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(159, 150, 133, 0.65);
+}
+
+.page-hero-content {
+    position: relative;
+    z-index: 2;
+
+    text-align: center;
+    color: white;
+}
+
+.breadcrumb {
+    display: block;
+
+    margin-bottom: 1rem;
+
+    font-size: .8rem;
+    letter-spacing: .15em;
+
+    opacity: .9;
+}
+
+.page-hero h1 {
+    font-family: var(--font-title);
+
+    font-size: 4.5rem;
+    font-weight: 400;
+
+    margin-bottom: 1rem;
+}
+
+.page-hero p {
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    line-height: 1.8;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-info {
+    padding: 8rem 0;
+}
+
+.contact-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 3rem;
+}
+
+.contact-card {
+    padding: 0 2rem;
+}
+
+.contact-card:not(:last-child) {
+    border-right: 1px solid #e4ddd7;
+}
+
+.contact-card h2 {
+    font-family: var(--font-title);
+
+    font-size: 2.2rem;
+    font-weight: 400;
+
+    margin-bottom: 1rem;
+}
+
+.contact-card .title-line {
+    margin-bottom: 2rem;
+}
+
+.contact-card p {
+    color: #7f756d;
+
+    line-height: 1.8;
+}
+
+.contact-btn {
+    display: inline-flex;
+
+    margin-top: 2rem;
+
+    padding: 1rem 2rem;
+
+    background: #b89b82;
+
+    border-radius: 999px;
+
+    color: white;
+
+    font-size: .8rem;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+
+    transition: .3s ease;
+}
+
+.contact-btn:hover {
+    background: #a98971;
+}
+
+.contact-list p {
+    margin-bottom: 1.25rem;
+}
+
+.hours-list p {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 1rem;
+}
+
+.hours-list span {
+    font-weight: 500;
+}
+
+/* =========================
+   LOCALISATION
+========================= */
+
+.location {
+    padding-bottom: 8rem;
+}
+
+.location-wrapper {
+    display: grid;
+
+    grid-template-columns: 400px 1fr;
+
+    overflow: hidden;
+
+    border-radius: 12px;
+
+    background: #ece8e2;
+}
+
+.location-content {
+    padding: 4rem;
+}
+
+.location-content h2 {
+    font-family: var(--font-title);
+
+    font-size: 3rem;
+    font-weight: 400;
+
+    margin-bottom: 1rem;
+}
+
+.location-content .title-line {
+    margin-bottom: 2rem;
+}
+
+.location-content p {
+    color: #7f756d;
+
+    line-height: 1.8;
+}
+
+.location-address {
+    margin-top: 2rem;
+
+    font-weight: 600;
+}
+
+.location-btn {
+    display: inline-flex;
+
+    margin-top: 2rem;
+
+    padding: 1rem 2rem;
+
+    border: 1px solid #b89b82;
+    border-radius: 999px;
+
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-size: .75rem;
+
+    transition: .3s ease;
+}
+
+.location-btn:hover {
+    background: #b89b82;
+    color: white;
+}
+
+.location-map iframe {
+    width: 100%;
+    height: 100%;
+
+    min-height: 450px;
+
+    border: none;
+}
+
+/* =========================
+   CTA
+========================= */
+
+.decouvrir {
+    position: relative;
+
+    height: 400px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+    background-image: url("./src/assets/images/tissu.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.decouvrir-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(159, 150, 133, 0.65);
+}
+
+.decouvrir-content {
+    position: relative;
+    z-index: 2;
+
+    text-align: center;
+}
+
+.decouvrir h2 {
+    margin-bottom: 2rem;
+
+    color: white;
+
+    font-family: var(--font-title);
+
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+.decouvrir-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 1rem 2.5rem;
+
+    background: white;
+
+    border-radius: 999px;
+
+    color: #5a4536;
+
+    text-transform: uppercase;
+    letter-spacing: .15em;
+    font-size: .75rem;
+
+    transition: .3s ease;
+}
+
+.decouvrir-btn:hover {
+    transform: translateY(-2px);
+}
+
+.contact-cta-text {
+    max-width: 600px;
+
+    margin: 0 auto 2rem;
+
+    color: white;
+
+    line-height: 1.8;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1024px) {
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-card {
+        border-right: none !important;
+
+        padding: 0;
+    }
+
+    .location-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .page-hero h1 {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .page-hero {
+        height: 300px;
+    }
+
+    .page-hero h1 {
+        font-size: 2.8rem;
+    }
+
+    .contact-info,
+    .location {
+        padding: 5rem 0;
+    }
+
+    .location-content {
+        padding: 3rem 2rem;
+    }
+
+    .location-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .decouvrir {
+        height: 320px;
+    }
+
+    .decouvrir h2 {
+        font-size: 2.4rem;
+    }
+
+    .contact-card h2 {
+        font-size: 1.9rem;
+    }
+    
+}

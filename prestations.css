@@ -1,0 +1,414 @@
+/* =========================
+   HERO
+========================= */
+
+.page-hero {
+    position: relative;
+
+    height: 380px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    background-image: url("./src/assets/images/tissu.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.page-hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(159, 150, 133, 0.65);
+}
+
+.page-hero-content {
+    position: relative;
+    z-index: 2;
+
+    text-align: center;
+    color: white;
+}
+
+.breadcrumb {
+    display: block;
+
+    margin-bottom: 1rem;
+
+    font-size: 0.8rem;
+    letter-spacing: 0.15em;
+
+    opacity: 0.9;
+}
+
+.page-hero h1 {
+    font-family: var(--font-title);
+
+    font-size: 4.5rem;
+    font-weight: 400;
+
+    margin-bottom: 1rem;
+}
+
+.page-hero p {
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    line-height: 1.8;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+.category {
+    padding: 8rem 0;
+}
+
+.category-alt {
+    background: #ece8e2;
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.cards-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 2rem;
+}
+
+.service-card {
+    background: white;
+
+    padding: 3rem;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.03);
+
+    transition: 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.service-card h3 {
+    font-family: var(--font-title);
+
+    font-size: 2rem;
+    font-weight: 400;
+
+    margin-bottom: 1rem;
+}
+
+.service-card p {
+    color: #7f756d;
+
+    line-height: 1.8;
+
+    margin-bottom: 2rem;
+}
+
+.service-card span {
+    display: inline-block;
+
+    padding: 0.5rem 1rem;
+
+    border-radius: 999px;
+
+    background: #f5f0eb;
+
+    color: #b89b82;
+
+    font-weight: 600;
+
+    font-size: 0.9rem;
+}
+
+/* =========================
+   ARGUMENTAIRE
+========================= */
+
+.advantages {
+    padding: 8rem 0;
+}
+
+.advantages-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 2rem;
+}
+
+.advantage {
+    background: white;
+
+    padding: 3rem;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.03);
+}
+
+.advantage h3 {
+    font-family: var(--font-title);
+
+    font-size: 2rem;
+    font-weight: 400;
+
+    margin-bottom: 1.5rem;
+}
+
+.advantage p {
+    color: #7f756d;
+
+    line-height: 1.8;
+}
+
+/* =========================
+   CTA RESERVATION
+========================= */
+
+.decouvrir {
+    position: relative;
+
+    height: 400px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+    background-image: url("./src/assets/images/tissu.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.decouvrir-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(159, 150, 133, 0.65);
+}
+
+.decouvrir-content {
+    position: relative;
+    z-index: 2;
+
+    text-align: center;
+}
+
+.decouvrir h2 {
+    margin-bottom: 2rem;
+
+    color: white;
+
+    font-family: var(--font-title);
+
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+.decouvrir-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1rem 2.5rem;
+
+    background: white;
+
+    border-radius: 999px;
+
+    color: #5a4536;
+
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+
+    font-size: 0.75rem;
+
+    transition: 0.3s ease;
+}
+
+.decouvrir-btn:hover {
+    transform: translateY(-2px);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1024px) {
+
+    .cards-grid,
+    .advantages-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .page-hero h1 {
+        font-size: 3.5rem;
+    }
+
+    .decouvrir h2 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .cards-grid,
+    .advantages-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .page-hero {
+        height: 300px;
+    }
+
+    .page-hero h1 {
+        font-size: 2.8rem;
+    }
+
+    .decouvrir {
+        height: 320px;
+    }
+
+    .decouvrir h2 {
+        font-size: 2.4rem;
+    }
+
+    .category,
+    .advantages {
+        padding: 5rem 0;
+    }
+}
+
+
+.faq {
+    padding: 8rem 0;
+
+    background: #ece8e2;
+}
+
+.faq-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background: white;
+
+    border-radius: 12px;
+
+    margin-bottom: 1rem;
+
+    overflow: hidden;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,.03);
+}
+
+.faq-question {
+    width: 100%;
+
+    border: none;
+    background: white;
+
+    padding: 1.5rem 2rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    cursor: pointer;
+
+    font-family: var(--font-title);
+    font-size: 1.6rem;
+    font-weight: 400;
+
+    color: #5f5148;
+}
+
+.faq-answer {
+    max-height: 0;
+
+    overflow: hidden;
+
+    transition: max-height .3s ease;
+}
+
+.faq-answer p {
+    padding: 0 2rem 2rem;
+
+    color: #7f756d;
+
+    line-height: 1.8;
+}
+
+
+.faq-item.active .faq-answer {
+    max-height: 200px;
+}
+
+
+.faq-item.active .faq-question span {
+    transform: rotate(45deg);
+}
+
+.faq-question span {
+    transition: .3s ease;
+
+    font-size: 1.5rem;
+}
+
+/* =========================
+   RESPONSIVE MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .page-hero {
+        height: 320px;
+    }
+
+    .page-hero h1 {
+        font-size: 2.8rem;
+    }
+
+    .page-hero p {
+        font-size: 0.95rem;
+        padding: 0 1rem;
+    }
+
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card {
+        padding: 2.5rem 2rem;
+    }
+
+    .faq-question {
+        font-size: 1.2rem;
+    }
+
+    .decouvrir h2 {
+        font-size: 2.5rem;
+    }
+}

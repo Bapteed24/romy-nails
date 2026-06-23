@@ -13,7 +13,7 @@
 
     overflow: hidden;
 
-    background-image: url("./src/assets/images/tissu.png");
+    background-image: url("./src/assets/images/tissu.webp");
     background-size: cover;
     background-position: center;
 }
@@ -238,7 +238,7 @@
 
     overflow: hidden;
 
-    background-image: url("./src/assets/images/tissu.png");
+    background-image: url("./src/assets/images/tissu.webp");
     background-size: cover;
     background-position: center;
 }
@@ -361,5 +361,5 @@
     .contact-card h2 {
         font-size: 1.9rem;
     }
-    
+
 }
